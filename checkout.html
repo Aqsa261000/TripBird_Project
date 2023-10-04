@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout|Tripbird</title>
+    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="shortcut icon" href="./assets/fav icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Trip<span>Bird</span></label>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./attractionshome.html">Attractions</a></li>
+            <li><a href="">Transportation</a>
+                <div class="transport">
+                    <ul>
+                        <li><a href="flight-booking.html">Flights</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="./reservation.html">Accomodation</a>
+                <div class="accomodation">
+                    <ul>
+                        <li><a href="">Hotels</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Shop Now</a>
+                <div class="categories">
+                    <ul>
+                        <li><a href="./travelgears_category.html">Travel Gears</a></li>
+                        <li><a href="./adventuregears_category.html">Adventure Gears</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="./profile.html">Profile</a>
+            </li>
+        </ul>
+    </nav> -->
+    <div class="container">
+        <h1>Checkout</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Billing Information</h2>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Address">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Zip Code">
+            </div>
+            <div class="col-md-6">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./assets/luggage.jpeg" alt="Product 1">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Wrangler Luggage</h3>
+                        <!-- <p class="product-description">Elevate your travel experience with the exceptional quality and
+                durability of Wrangler Luggage.</p> -->
+                        <h5 class="pro-det">Quantity:</h5>
+                        <input type="number" class="product-quantity" min="1" value="1">
+                        <p class="size">56 cm x 36 cm </p>
+                    </div>
+                    <div class="pricing">
+                        <div class="price">
+                            <!-- <p class="price-heading label">Each Price: </p> -->
+                            <p class="rupees value">Rs 3,699/-</p>
+                        </div>
+                        <div class="tax">
+                            <!-- <p class="tax-label label">Plus Tax:</p> -->
+                            <p class="tax-value value">+5% tax</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="total-price">
+                            <!-- <p class="price-heading label">Total Price:</p> -->
+                            <p class="rupees value">Rs 3,883.95/-</p>
+                        </div>
+                        <div class="delete-button">
+                            <button class="product-removal"><i class="fa-solid fa-trash-can delete"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Shipping Information</h2>
+                <input type="text" placeholder="Shipping Name">
+                <input type="email" placeholder="Shipping Email">
+                <input type="text" placeholder="Shipping Address">
+                <input type="text" placeholder="Shipping City">
+                <input type="text" placeholder="Shipping State">
+                <input type="text" placeholder="Shipping Zip Code">
+            </div>
+            <div class="col-md-6">
+                <h2>Payment Information</h2>
+                <select name="payment-method">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Expiration Date">
+                <input type="text" placeholder="CVV">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 ">
+                <button type="submit" class="place-btn"><a href="./placeorder.html">Place Order</a> </button>
+            </div>
+        </div>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
