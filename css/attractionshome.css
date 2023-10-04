@@ -61,7 +61,7 @@ nav{
     color: var(--color-primary);
     
   }
-  
+/*   
   nav ul{
     float: right;
     margin-right: 2rem;
@@ -110,7 +110,7 @@ nav ul li:nth-child(8) a:hover{
     color: var(--color-white);
     background-color: transparent;
     border-radius: 0;
-  }  
+  }   */
   .checkbtn{
     font-size: 30px;
     color: var(--color-white);

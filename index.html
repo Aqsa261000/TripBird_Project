@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripBird | Home</title>
-
-    
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -13,14 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-   <link rel="shortcut icon" href="./assets/fav icon.jpeg" type="image/x-icon">
-   <link rel="stylesheet" href="./css/navbar.css">
-   <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./assets/fav icon.jpeg" type="image/x-icon">
+
 </head>
 <body>
     
-    <!-- NAVBAR -->
+    <!-- Navbar -->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -28,50 +26,70 @@
         </label>
         <label class="logo">Trip<span>Bird</span></label>
         <ul>
-            <li><a href="./index.html"  style="border-bottom: 2px solid rgb(0, 140, 255);">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./attractionshome.html">Attractions</a></li>
-            <li><a href="./flight-booking.html">Flight Booking</a></li>
-            <li><a href="./reservation.html">Hotel Booking</a></li>
-            <li><a href="./signup.html">Sign Up</a></li>
-            <li><a href="./login.html">Login</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/attractionshome.html">Attractions</a></li>
+          <li><a href="#">Transportation</a>
+              <div class="transport">
+                  <ul>
+                      <li><a href="/flight-booking.html">Flights</a></li>
+                  </ul>
+              </div>
+          </li>
+          <li><a href="">Accomodation</a>
+              <div class="accomodation">
+                  <ul>
+                      <li><a href="/reservation.html">Hotels</a></li>
+                  </ul>
+              </div>
+          </li>
+          <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <div class="categories">
+                  <ul>
+                      <li><a href="/travelgears_category.html">Travel Gears</a></li>
+                      <li><a href="/adventuregears_category.html">Adventure Gears</a></li>
+                  </ul>
+              </div>
+          </li>
+          <li><a href="/profile.html"><i class="fa-regular fa-user"></i></a>
+          </li>
         </ul>
-      </nav>
+      </nav>   
 
     <!-- Section -->
 
     <section class="home">
-        <video class="video-slide active" src="./assets/videos/flight.mp4" autoplay loop muted></video>
-        <video class="video-slide" src="./assets/videos/fun.mp4" autoplay loop muted></video>
-        <video class="video-slide" src="./assets/videos/car.mp4" autoplay loop muted></video>
-        <video class="video-slide" src="./assets/videos/ballons.mp4" autoplay loop muted></video>
-        <video class="video-slide" src="./assets/videos/jungle.mp4" autoplay loop muted></video>
+        <video class="video-slide active" src="/assets/1.mp4" autoplay loop muted></video>
+        <video class="video-slide" src="/assets/2.mp4" autoplay loop muted></video>
+        <video class="video-slide" src="/assets/3.mp4" autoplay loop muted></video>
+        <video class="video-slide" src="/assets/ballons.mp4" autoplay loop muted></video>
+        <video class="video-slide" src="/assets/plane.mp4" autoplay loop muted></video>
 
         <div class="content active">
-            <h1>Air Trip <br> <span>Together</span></h1>
-            <p>Embark on a voyage like no other with TripBird – your compass to hassle-free travel. From takeoff to touchdown, we craft your flight adventure, ensuring every moment soars with comfort and excitement.</p>
-            <a href="#">Read More</a>
+            <h1>Road Trip <br> <span>Together</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi quidem voluptate voluptatum error eum accusamus incidunt sint, itaque similique sit, cumque obcaecati numquam facilis vel velit et nisi perferendis!</p>
+            <a href="#">Sign Up Now</a>
         </div>
         <div class="content">
             <h1>Feel Nature <br> <span>Relax</span></h1>
-            <p>Embark on a voyage like no other with TripBird – your compass to hassle-free travel. From takeoff to touchdown, we craft your flight adventure, ensuring every moment soars with comfort and excitement.</p>
-            <a href="#">Read More</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi quidem voluptate voluptatum error eum accusamus incidunt sint, itaque similique sit, cumque obcaecati numquam facilis vel velit et nisi perferendis!</p>
+            <a href="#">Sign Up Now</a>
         </div>
         <div class="content">
-            <h1>Adeventure <br> <span>Of Road</span></h1>
-            <p>Embark on a voyage like no other with TripBird – your compass to hassle-free travel. From takeoff to touchdown, we craft your flight adventure, ensuring every moment soars with comfort and excitement.</p>
-            <a href="#">Read More</a>
+            <h1>Camping <br> <span>Enjoy</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi quidem voluptate voluptatum error eum accusamus incidunt sint, itaque similique sit, cumque obcaecati numquam facilis vel velit et nisi perferendis!</p>
+            <a href="#">Sign Up Now</a>
         </div>
         <div class="content">
-            <h1>Captivating  <br> <span>spots</span></h1>
-            <p>Embark on a voyage like no other with TripBird – your compass to hassle-free travel. From takeoff to touchdown, we craft your flight adventure, ensuring every moment soars with comfort and excitement.</p>
-            <a href="#">Read More</a>
+            <h1>Wonderful <br> <span>Island</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi quidem voluptate voluptatum error eum accusamus incidunt sint, itaque similique sit, cumque obcaecati numquam facilis vel velit et nisi perferendis!</p>
+            <a href="#">Sign Up Now</a>
         </div>
         <div class="content">
-            <h1>Attraction <br> <span>Expeditions</span></h1>
-            <p>Embark on a voyage like no other with TripBird – your compass to hassle-free travel. From takeoff to touchdown, we craft your flight adventure, ensuring every moment soars with comfort and excitement.</p>
-            <a href="#">Read More</a>
+            <h1>Adventure <br> <span>Off Road</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi quidem voluptate voluptatum error eum accusamus incidunt sint, itaque similique sit, cumque obcaecati numquam facilis vel velit et nisi perferendis!</p>
+            <a href="#">Sign Up Now</a>
         </div>
 
         <div class="media-icons">
@@ -88,11 +106,139 @@
         </div>
     </section>
 
+    <section class="down-arrow">
+        <div class="arrow">
+            <img src="assets/downarrow.png" width="30">
+        </div>
+    </section>
+
+    <section class="about section" id="about">
+        <div class="about-container container grid">
+            <div class="about-data">
+                <h2 class="section-title">
+                    Learn More About Travel
+                </h2>
+            </div>
+                <div class="about-section">
+                    <div class="about-left">
+                        <p class="about-description">
+                            "Explore a world of adventure and discovery! Dive deeper into the fascinating realm of travel on our website. Discover tips, guides, and hidden gems that will enhance your travel experiences. From exotic destinations to travel hacks, our website is your ultimate resource for all things travel. Start your journey to new horizons today!"
+                        </p>
+                        <button class="explore-btn">Explore</button>                
+                    </div>
+    
+                    <div class="about-image">
+                        <img src="/assets/valley.jpg" alt="" class="about-img">
+                        <div class="about-shadow"></div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="popular section" id="explore">
+        <h2 class="section-title">
+            Our Services
+        </h2>
+
+        <div class="popular-container container grid">
+            <article class="popular-card">
+                <div class="popular-image">
+                    <img src="/assets/flight-booking.jpg" alt="" class="popular-img">
+                    <div class="popular-shadow"></div>
+                </div>
+                <h1 class="popular-title">
+                    Flight Booking Service
+                </h1>
+                <div class="popular-location">
+                    <span>"Experience seamless travel with our flight booking service. We take pride in providing you with a hassle-free booking experience, ensuring that your journey begins with convenience and peace of mind.</span>
+                </div>
+            </article>
+
+            <article class="popular-card">
+                <div class="popular-image">
+                    <img src="/assets/hotel-booking.jpg" alt="" class="popular-img">
+                    <div class="popular-shadow"></div>
+                </div>
+                <h1 class="popular-title">
+                    Hotel Booking
+                </h1>
+                <div class="popular-location">
+                    <i class="ri-map-pin-line"></i>
+                    <span>"Experience comfort, convenience, and exceptional service with our hotel booking service. We take pride in providing you with a seamless and hassle-free way to find and reserve the perfect accommodations for your next trip.</span>
+                </div>
+            </article>
+
+            <article class="popular-card">
+                <div class="popular-image">
+                    <img src="/assets/shopping.avif" alt="" class="popular-img">
+                    <div class="popular-shadow"></div>
+                </div>
+                <h1 class="popular-title">
+                    Shop Online
+                </h1>
+                <div class="popular-location">
+                    <i class="ri-map-pin-line"></i>
+                    <span>"Discover the ultimate convenience in travel shopping with our online store dedicated to travel accessories. We've curated a collection of top-quality items to make your journeys smoother and more enjoyable</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="explore section" id="explore">
+        <div class="explore-container">
+            <div class="explore-image">
+                <img src="/assets/travel.jpg" alt="" class="explore-img">
+                <div class="explore-shadow"></div>
+            </div>
+            <div class="explore-content container grid">
+                <div class="explore-data">
+                    <h2 class="section-title">
+                        Explore The <br>
+                        Best Paradises
+                    </h2>
+                    <p class="explore-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ab est repudiandae exercitationem autem fugiat ipsam omnis possimus sunt sed?
+                    </p>
+
+                </div>
+                <div class="explore-user">
+                    <img src="/assets/profile.jpg" alt="" class="explore-perfil">
+                    <span class="explore-name">Paul Jeans</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="join section">
+        <div class="join-container container grid">
+            <div class="join-data">
+                <h2 class="section-title">
+                    Your Journey <br>
+                    Starts Here
+                </h2>
+                <p class="join-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus delectus quidem autem quae a!
+                </p>
+
+                <form action="" class="join-form">
+                    <button class="join-button button">Sign Up Now <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
 
-    
+    <div class="footer">
+        <div class="copyright">© 2023 TripBird LLC All rights reserved.
+      </div>
+
+    <!-- Scroll Up -->
+
+    <a href="#" class="scrollup" id="scroll-up"><i class="fa-solid fa-arrow-up"></i></a>
 
 
-    <script src="./script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

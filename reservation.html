@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripBird | Hotel Reservation</title>
 
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="../css/reservation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,23 +25,49 @@
     <section>
         <!-- Navbar -->
     
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Trip<span>Bird</span></label>
-        <ul class="navitems">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./attractionshome.html">Attractions</a></li>
-            <li><a href="./flight-booking.html">Flight Booking</a></li>
-            <li><a href="./reservation.html"  style="border-bottom: 2px solid rgb(0, 140, 255);">Hotel Booking</a></li>
-            <li><a href="./signup.html">Sign Up</a></li>
-            <li><a href="./login.html">Login</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Trip<span>Bird</span></label>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/attractionshome.html">Attractions</a></li>
+              <li>
+                <a href="#">Transportation</a>
+                <div class="transport">
+                  <ul>
+                    <li><a href="/flight-booking.html">Flights</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">Accomodation</a>
+                <div class="accomodation">
+                  <ul>
+                    <li><a href="/reservation.html">Hotels</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="categories">
+                  <ul>
+                    <li><a href="/travelgears_category.html">Travel Gears</a></li>
+                    <li>
+                      <a href="/adventuregears_category.html">Adventure Gears</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="/profile.html"><i class="fa-regular fa-user"></i></a>
+              </li>
+            </ul>
+          </nav>
     
     </section>
 

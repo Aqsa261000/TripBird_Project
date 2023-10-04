@@ -1,190 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/fav icon.jpeg"
+      type="image/x-icon"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-   <link rel="shortcut icon" href="./assets/fav icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <title>TripBird | About Us</title>
+  </head>
 
-  <link rel="stylesheet" href="./css/about.css">
-  <title>TripBird | About Us</title>
-</head>
-
-<body>
-  <div class="fullcontainer">
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">Trip<span>Bird</span></label>
-      <ul>  
-        <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html" style="border-bottom: 2px solid rgb(0, 140, 255);">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./attractionshome.html">Attractions</a></li>
-            <li><a href="./flight-booking.html">Flight Booking</a></li>
-            <li><a href="./reservation.html">Hotel Booking</a></li>
-            <li><a href="./signup.html">Sign Up</a></li>
-            <li><a href="./login.html">Login</a></li>
-      </ul>
-    </nav>
-    <div class="header">
-      <h1>About Us</h1>
-    </div>
-    <div class="about">
-      <div class="aboutcontent">
-        <h1>About TripBird</h1>
-        <p>At TripBird, we believe that every journey is a story waiting to be told. Our platform is more
-          than just a travel website; it's your companion in discovering the beauty, culture, and hidden
-          gems of Pakistan. Whether you're a seasoned explorer or embarking on your very first adventure,
-          TripBird is here to ensure that your travel experience is nothing short of extraordinary.</p>
-        <p>Step into a realm where wanderlust finds its true home – TripBird beckons you to embark on a
-          symphony of exploration, where each journey is an unwritten tale ready to be woven. Our ethos
-          resonates with the belief that beyond the mere act of traversing, lies an enchanting narrative
-          waiting to unfurl.</p>
+  <body>
+    <div class="fullcontainer">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Trip<span>Bird</span></label>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/attractionshome.html">Attractions</a></li>
+          <li>
+            <a href="#">Transportation</a>
+            <div class="transport">
+              <ul>
+                <li><a href="/flight-booking.html">Flights</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Accomodation</a>
+            <div class="accomodation">
+              <ul>
+                <li><a href="/reservation.html">Hotels</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="categories">
+              <ul>
+                <li><a href="/travelgears_category.html">Travel Gears</a></li>
+                <li>
+                  <a href="/adventuregears_category.html">Adventure Gears</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="/profile.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header">
+        <h1>About Us</h1>
       </div>
-    </div>
-    <div class="aboutvideo"><video src="./assets/images/aboutvideo.mp4" autoplay loop></video></div>
-    <div class="whyus">
-      <div class="mainheading">
-        <h1>Why TripBird is the Best?</h1>
-      </div>
-      <div class="subpart2">
-        <div class="box box1">
-          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 222.667 222.667" xml:space="preserve">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M110.593,53.33c-26.119,0.383-47.445,21.112-48.552,47.19c-0.471,11.112,2.674,21.746,9.096,30.753 c9.684,13.579,14.194,26.604,14.194,40.986v0.588c0,0.289,0.038,0.568,0.085,0.843v33.073c0,1.664,0.828,3.22,2.209,4.148 l16.206,10.903c0.825,0.555,1.797,0.852,2.791,0.852c0.003,0,0.006,0,0.008,0l9.581-0.018c0.998-0.002,1.972-0.302,2.797-0.862 l16.048-10.886c1.372-0.931,2.193-2.48,2.193-4.138v-33.068c0.048-0.277,0.085-0.557,0.085-0.848v-0.593 c0-14.577,4.446-27.51,13.992-40.7c6.112-8.446,9.343-18.437,9.343-28.893C160.67,75.21,138.121,52.902,110.593,53.33z M117.537,177.848l-22.12,6.889v-6.889H117.537z M95.417,195.21l31.833-9.914v4.388l-31.833,9.915V195.21z M114.662,212.652 l-6.518,0.012l-6.662-4.482l25.768-8.025v3.957L114.662,212.652z M106.333,39.828V5c0-2.762,2.239-5,5-5s5,2.238,5,5v34.828 c0,2.762-2.239,5-5,5S106.333,42.59,106.333,39.828z M219.732,96.984c0,2.762-2.239,5-5,5h-30.105c-2.761,0-5-2.238-5-5s2.239-5,5-5 h30.105C217.493,91.984,219.732,94.223,219.732,96.984z M38.041,101.984H7.935c-2.761,0-5-2.238-5-5s2.239-5,5-5h30.105 c2.761,0,5,2.238,5,5S40.802,101.984,38.041,101.984z M62.946,55.101c-0.977,0.977-2.256,1.465-3.536,1.465 s-2.559-0.488-3.536-1.465L34.172,33.397c-1.953-1.952-1.953-5.118,0-7.07c1.953-1.953,5.118-1.953,7.071,0L62.946,48.03 C64.899,49.982,64.899,53.148,62.946,55.101z M166.792,55.101c-0.977,0.977-2.256,1.465-3.536,1.465s-2.559-0.488-3.536-1.465 c-1.953-1.952-1.953-5.118,0-7.07l21.703-21.703c1.953-1.953,5.118-1.953,7.071,0c1.953,1.952,1.953,5.118,0,7.07L166.792,55.101z M194.073,162.346c1.953,1.952,1.953,5.118,0,7.07c-0.977,0.977-2.256,1.465-3.536,1.465c-1.28,0-2.559-0.488-3.536-1.465 l-20.778-20.778c-1.953-1.952-1.953-5.118,0-7.07c1.954-1.953,5.119-1.952,7.071,0L194.073,162.346z M56.443,141.567 c1.953,1.952,1.953,5.118,0,7.07l-20.778,20.778c-0.977,0.977-2.256,1.465-3.536,1.465s-2.559-0.488-3.536-1.465 c-1.953-1.952-1.953-5.118,0-7.07l20.778-20.778C51.325,139.614,54.49,139.614,56.443,141.567z">
-              </path>
-            </g>
-          </svg>
-          <h3>One Platform</h3>
-          <p>Transform travel planning: book attractions, hotels, and flights effortlessly on a single
-            platform.</p>
+      <div class="about">
+        <div class="aboutcontent">
+          <h1>About TripBird</h1>
+          <p>
+            At TripBird, we believe that every journey is a story waiting to be
+            told. Our platform is more than just a travel website; it's your
+            companion in discovering the beauty, culture, and hidden gems of
+            Pakistan. Whether you're a seasoned explorer or embarking on your
+            very first adventure, TripBird is here to ensure that your travel
+            experience is nothing short of extraordinary.
+          </p>
+          <p>
+            Step into a realm where wanderlust finds its true home – TripBird
+            beckons you to embark on a symphony of exploration, where each
+            journey is an unwritten tale ready to be woven. Our ethos resonates
+            with the belief that beyond the mere act of traversing, lies an
+            enchanting narrative waiting to unfurl.
+          </p>
         </div>
-        <div class="box box2">
-          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 309.768 309.768" xml:space="preserve" fill="#000000">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <g>
+      </div>
+      <div class="aboutvideo">
+        <video src="./assets/images/aboutvideo.mp4" autoplay loop></video>
+      </div>
+      <div class="whyus">
+        <div class="mainheading">
+          <h1>Why TripBird is the Best?</h1>
+        </div>
+        <div class="subpart2">
+          <div class="box box1">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 222.667 222.667"
+              xml:space="preserve"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M110.593,53.33c-26.119,0.383-47.445,21.112-48.552,47.19c-0.471,11.112,2.674,21.746,9.096,30.753 c9.684,13.579,14.194,26.604,14.194,40.986v0.588c0,0.289,0.038,0.568,0.085,0.843v33.073c0,1.664,0.828,3.22,2.209,4.148 l16.206,10.903c0.825,0.555,1.797,0.852,2.791,0.852c0.003,0,0.006,0,0.008,0l9.581-0.018c0.998-0.002,1.972-0.302,2.797-0.862 l16.048-10.886c1.372-0.931,2.193-2.48,2.193-4.138v-33.068c0.048-0.277,0.085-0.557,0.085-0.848v-0.593 c0-14.577,4.446-27.51,13.992-40.7c6.112-8.446,9.343-18.437,9.343-28.893C160.67,75.21,138.121,52.902,110.593,53.33z M117.537,177.848l-22.12,6.889v-6.889H117.537z M95.417,195.21l31.833-9.914v4.388l-31.833,9.915V195.21z M114.662,212.652 l-6.518,0.012l-6.662-4.482l25.768-8.025v3.957L114.662,212.652z M106.333,39.828V5c0-2.762,2.239-5,5-5s5,2.238,5,5v34.828 c0,2.762-2.239,5-5,5S106.333,42.59,106.333,39.828z M219.732,96.984c0,2.762-2.239,5-5,5h-30.105c-2.761,0-5-2.238-5-5s2.239-5,5-5 h30.105C217.493,91.984,219.732,94.223,219.732,96.984z M38.041,101.984H7.935c-2.761,0-5-2.238-5-5s2.239-5,5-5h30.105 c2.761,0,5,2.238,5,5S40.802,101.984,38.041,101.984z M62.946,55.101c-0.977,0.977-2.256,1.465-3.536,1.465 s-2.559-0.488-3.536-1.465L34.172,33.397c-1.953-1.952-1.953-5.118,0-7.07c1.953-1.953,5.118-1.953,7.071,0L62.946,48.03 C64.899,49.982,64.899,53.148,62.946,55.101z M166.792,55.101c-0.977,0.977-2.256,1.465-3.536,1.465s-2.559-0.488-3.536-1.465 c-1.953-1.952-1.953-5.118,0-7.07l21.703-21.703c1.953-1.953,5.118-1.953,7.071,0c1.953,1.952,1.953,5.118,0,7.07L166.792,55.101z M194.073,162.346c1.953,1.952,1.953,5.118,0,7.07c-0.977,0.977-2.256,1.465-3.536,1.465c-1.28,0-2.559-0.488-3.536-1.465 l-20.778-20.778c-1.953-1.952-1.953-5.118,0-7.07c1.954-1.953,5.119-1.952,7.071,0L194.073,162.346z M56.443,141.567 c1.953,1.952,1.953,5.118,0,7.07l-20.778,20.778c-0.977,0.977-2.256,1.465-3.536,1.465s-2.559-0.488-3.536-1.465 c-1.953-1.952-1.953-5.118,0-7.07l20.778-20.778C51.325,139.614,54.49,139.614,56.443,141.567z"
+                ></path>
+              </g>
+            </svg>
+            <h3>One Platform</h3>
+            <p>
+              Transform travel planning: book attractions, hotels, and flights
+              effortlessly on a single platform.
+            </p>
+          </div>
+          <div class="box box2">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 309.768 309.768"
+              xml:space="preserve"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
                 <g>
-                  <path style="fill:#010002;"
-                    d="M308.417,122.685c-2.317-4.607-7.223-7.408-12.292-6.967l-15.409,1.126 c-16.714-60.412-72.04-104.968-137.706-104.968C64.154,11.875,0,76.034,0,154.884c0,78.856,64.154,143.009,143.009,143.009 c45.645,0,88.934-22.083,115.798-59.063c4.123-5.689,2.855-13.63-2.823-17.764c-5.689-4.128-13.636-2.845-17.759,2.817 c-22.099,30.421-57.692,48.587-95.222,48.587c-64.839,0-117.582-52.748-117.582-117.582S78.165,37.308,143.004,37.308 c52.22,0,96.549,34.244,111.838,81.434l-8.023,0.587c-5.124,0.37-9.524,3.807-11.139,8.681 c-1.621,4.884-0.131,10.258,3.753,13.619l23.083,19.934c2.246,3.617,6.217,6.037,10.775,6.037c0.239,0,0.462-0.054,0.696-0.065 c0.076,0,0.136,0.033,0.207,0.033c0.305,0,0.615-0.005,0.93-0.033c3.361-0.25,6.483-1.822,8.692-4.373l22.849-26.456 C310.038,132.818,310.723,127.275,308.417,122.685z">
-                  </path>
                   <g>
-                    <path style="fill:#010002;"
-                      d="M75.772,199.191v-12.347l11.259-10.176c19.031-17.024,28.278-26.815,28.544-36.997 c0-7.109-4.286-12.733-14.348-12.733c-7.5,0-14.071,3.742-18.629,7.239l-5.765-14.62c6.57-4.944,16.752-8.974,28.55-8.974 c19.706,0,30.562,11.525,30.562,27.342c0,14.609-10.584,26.276-23.187,37.53l-8.044,6.701v0.261h32.841v16.763H75.772V199.191z">
-                    </path>
-                    <path style="fill:#010002;"
-                      d="M186.261,199.191v-20.783H147.66v-13.26l32.972-53.091h24.933v51.073h10.454v15.278h-10.454 v20.783C205.564,199.191,186.261,199.191,186.261,199.191z M186.261,163.13v-19.298c0-5.232,0.267-10.584,0.669-16.219h-0.533 c-2.823,5.635-5.102,10.726-8.044,16.219l-11.661,19.031v0.267H186.261z">
-                    </path>
+                    <path
+                      style="fill: #010002"
+                      d="M308.417,122.685c-2.317-4.607-7.223-7.408-12.292-6.967l-15.409,1.126 c-16.714-60.412-72.04-104.968-137.706-104.968C64.154,11.875,0,76.034,0,154.884c0,78.856,64.154,143.009,143.009,143.009 c45.645,0,88.934-22.083,115.798-59.063c4.123-5.689,2.855-13.63-2.823-17.764c-5.689-4.128-13.636-2.845-17.759,2.817 c-22.099,30.421-57.692,48.587-95.222,48.587c-64.839,0-117.582-52.748-117.582-117.582S78.165,37.308,143.004,37.308 c52.22,0,96.549,34.244,111.838,81.434l-8.023,0.587c-5.124,0.37-9.524,3.807-11.139,8.681 c-1.621,4.884-0.131,10.258,3.753,13.619l23.083,19.934c2.246,3.617,6.217,6.037,10.775,6.037c0.239,0,0.462-0.054,0.696-0.065 c0.076,0,0.136,0.033,0.207,0.033c0.305,0,0.615-0.005,0.93-0.033c3.361-0.25,6.483-1.822,8.692-4.373l22.849-26.456 C310.038,132.818,310.723,127.275,308.417,122.685z"
+                    ></path>
+                    <g>
+                      <path
+                        style="fill: #010002"
+                        d="M75.772,199.191v-12.347l11.259-10.176c19.031-17.024,28.278-26.815,28.544-36.997 c0-7.109-4.286-12.733-14.348-12.733c-7.5,0-14.071,3.742-18.629,7.239l-5.765-14.62c6.57-4.944,16.752-8.974,28.55-8.974 c19.706,0,30.562,11.525,30.562,27.342c0,14.609-10.584,26.276-23.187,37.53l-8.044,6.701v0.261h32.841v16.763H75.772V199.191z"
+                      ></path>
+                      <path
+                        style="fill: #010002"
+                        d="M186.261,199.191v-20.783H147.66v-13.26l32.972-53.091h24.933v51.073h10.454v15.278h-10.454 v20.783C205.564,199.191,186.261,199.191,186.261,199.191z M186.261,163.13v-19.298c0-5.232,0.267-10.584,0.669-16.219h-0.533 c-2.823,5.635-5.102,10.726-8.044,16.219l-11.661,19.031v0.267H186.261z"
+                      ></path>
+                    </g>
                   </g>
                 </g>
               </g>
-            </g>
-          </svg>
-          <h3>24/7 Support</h3>
-          <p>Rest assured, our dedicated 24/7 support is here to assist you with any challenges you may
-            encounter.</p>
-        </div>
-        <div class="box box3">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M19 21V15M19 15L17 17M19 15L21 17M21 11V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.0799 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.0799 19 6.2 19H13M20.6067 8.26229L15.5499 11.6335C14.2669 12.4888 13.6254 12.9165 12.932 13.0827C12.3192 13.2295 11.6804 13.2295 11.0677 13.0827C10.3743 12.9165 9.73279 12.4888 8.44975 11.6335L3.14746 8.09863"
-                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            </g>
-          </svg>
-          <h3>Feedback</h3>
-          <p>Your feedback is invaluable, driving us to continually improve and enhance your experience with
-            us.</p>
+            </svg>
+            <h3>24/7 Support</h3>
+            <p>
+              Rest assured, our dedicated 24/7 support is here to assist you
+              with any challenges you may encounter.
+            </p>
+          </div>
+          <div class="box box3">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M19 21V15M19 15L17 17M19 15L21 17M21 11V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.0799 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.0799 19 6.2 19H13M20.6067 8.26229L15.5499 11.6335C14.2669 12.4888 13.6254 12.9165 12.932 13.0827C12.3192 13.2295 11.6804 13.2295 11.0677 13.0827C10.3743 12.9165 9.73279 12.4888 8.44975 11.6335L3.14746 8.09863"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+            <h3>Feedback</h3>
+            <p>
+              Your feedback is invaluable, driving us to continually improve and
+              enhance your experience with us.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="gallery"><div class="carousel">
-      <h1>Our Gallery</h1>
-      <div id="carouselExampleControlsNoTouching12" class="carousel slide" data-bs-touch="false">
-                  
-                  <div class="carousel-inner">
-                      
-                      <div class="carousel-item active">
-                          
-                          <div class="imagecollage">
-                              <img src="./assets/images/karachi.jpg" alt="">
-                              <img src="./assets/images/arena1.jpg" alt="">
-                              <img src="./assets/images/luckyonemall2.jpg" alt="">
-                              <img src="./assets/images/mohattapalace1.jpg" alt="">
-                              <img src="./assets/images/winterland1.png" alt="">
-                              
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="imagecollage">
-                              <img src="./assets/images/lahore.jpg" alt="">
-                              <img src="./assets/images/emporiummall1.jpg" alt="">
-                              <img src="./assets/images/joyland1.jpg" alt="">
-                              <img src="./assets/images/lahorefort1.jpg" alt="">
-                              <img src="./assets/images/lahoremuseum1.jpg" alt="">
-                              
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="imagecollage">
-                              <img src="./assets/images/islamabad.jpg" alt="">
-                              <img src="./assets/images/centaurusmall2.jpg" alt="">
-                              <img src="./assets/images/pakistanmonument1.jpg" alt="">
-                              <img src="./assets/images/margallahills1.jpg" alt="">
-                              <img src="./assets/images/fatimajinnahpark1.jpg" alt="">
-                              
-                          </div>
-                      </div>
-                      
-
-                  </div>
-                  <button class="carousel-control-prev" type="button" 
-                      data-bs-target="#carouselExampleControlsNoTouching12" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button"
-                      data-bs-target="#carouselExampleControlsNoTouching12" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                  </button>
-                  
-              
+      <div class="gallery">
+        <div class="carousel">
+          <h1>Our Gallery</h1>
+          <div
+            id="carouselExampleControlsNoTouching12"
+            class="carousel slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="imagecollage">
+                  <img src="./assets/images/karachi.jpg" alt="" />
+                  <img src="./assets/images/arena1.jpg" alt="" />
+                  <img src="./assets/images/luckyonemall2.jpg" alt="" />
+                  <img src="./assets/images/mohattapalace1.jpg" alt="" />
+                  <img src="./assets/images/winterland1.png" alt="" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imagecollage">
+                  <img src="./assets/images/lahore.jpg" alt="" />
+                  <img src="./assets/images/emporiummall1.jpg" alt="" />
+                  <img src="./assets/images/joyland1.jpg" alt="" />
+                  <img src="./assets/images/lahorefort1.jpg" alt="" />
+                  <img src="./assets/images/lahoremuseum1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imagecollage">
+                  <img src="./assets/images/islamabad.jpg" alt="" />
+                  <img src="./assets/images/centaurusmall2.jpg" alt="" />
+                  <img src="./assets/images/pakistanmonument1.jpg" alt="" />
+                  <img src="./assets/images/margallahills1.jpg" alt="" />
+                  <img src="./assets/images/fatimajinnahpark1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching12"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching12"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </div>
-  </div>
-  </div>
-      
-  
-  <div class="footer">
-    <div class="copyright">© 2023 TripBird LLC All rights reserved.
+
+      <div class="footer">
+        <div class="copyright">© 2023 TripBird LLC All rights reserved.</div>
+      </div>
     </div>
-</div>
-</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
