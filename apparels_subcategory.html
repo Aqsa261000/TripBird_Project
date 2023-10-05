@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/fav icon.jpeg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/handbags_subcategory.css" />
+
+    <script src="script.js" defer></script>
+
+    <title>Product -- TripBird</title>
+  </head>
+
+  <body>
+    <div class="fullcontainer">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Trip<span>Bird</span></label>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/attractionshome.html">Attractions</a></li>
+          <li>
+            <a href="#">Transportation</a>
+            <div class="transport">
+              <ul>
+                <li><a href="/flight-booking.html">Flights</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Accomodation</a>
+            <div class="accomodation">
+              <ul>
+                <li><a href="/reservation.html">Hotels</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="categories">
+              <ul>
+                <li><a href="/travelgears_category.html">Travel Gears</a></li>
+                <li>
+                  <a
+                    href="/adventuregears_category.html"
+                    style="
+                      border-bottom: 0.2rem solid rgb(0, 140, 255);
+                      border-radius: 0;
+                    "
+                    >Adventure Gears</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="/profile.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="categories">
+        <h1 class="mainheading">Adventure Gears</h1>
+      </div>
+      <div class="subcategories">
+        <div class="subsubcategories">
+          <div class="ssc1">
+            <div class="sc1image">
+              <a href="./campingaccessories_subcategory.html"
+                ><img src="./assets/campaccessoriescategory.jpg" alt=""
+              /></a>
+            </div>
+            <div class="sc1text">
+              <h1>
+                <a href="./campingaccessories_subcategory.html"
+                  >Camping Accessories</a
+                >
+              </h1>
+            </div>
+          </div>
+          <div class="ssc2">
+            <div class="sc2image">
+              <a href="./firstaid_subcategory.html"
+                ><img src="./assets/firstaidcategory.jpg" alt=""
+              /></a>
+            </div>
+            <div class="sc2text">
+              <h1><a href="./firstaid_subcategory.html">First Aid</a></h1>
+            </div>
+          </div>
+          <div class="ssc3">
+            <div class="sc3image">
+              <a href="./apparels_subcategory.html"
+                ><img src="./assets/raincoatcategory.jpg" alt=""
+              /></a>
+            </div>
+            <div class="sc3text">
+              <h1><a href="./apparels_subcategory.html">Apparels</a></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filtersection">
+        <div class="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button accordionbutton"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Filter by Brand
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <div>
+                  <input type="checkbox" id="brand1" />
+                  <label for="brand1">Wrangler</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="brand2" />
+                  <label for="brand2">Kenneth</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="brand3" />
+                  <label for="brand3">Vienna</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="brand4" />
+                  <label for="brand4">SoftSpide</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="brand5" />
+                  <label for="brand5">Neon</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="brand6" />
+                  <label for="brand6">Merax</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="brand7" />
+                  <label for="brand7">Rockland</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                Filter by Price
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <input
+                  type="range"
+                  class="form-range"
+                  id="myRange"
+                  min="1000"
+                  max="20000"
+                  value="1000"
+                  step="1000"
+                />
+                <label for="myRange" class="form-label"
+                  >Rs. <span id="demo"></span
+                ></label>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                Filter by Color
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body colors">
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour"
+              >
+                Filter by Rating
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-collapseFour"
+            >
+              <div class="accordion-body">
+                <div class="ratingfilter">
+                  <div>
+                    <input type="checkbox" id="brand1" />
+                    <label for="brand1">5 stars</label>
+                  </div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                  </div>
+                </div>
+                <div class="ratingfilter">
+                  <div>
+                    <input type="checkbox" id="brand1" />
+                    <label for="brand1">4 stars</label>
+                  </div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="ratingfilter">
+                  <div>
+                    <input type="checkbox" id="brand1" />
+                    <label for="brand1">3 stars</label>
+                  </div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="ratingfilter">
+                  <div>
+                    <input type="checkbox" id="brand1" />
+                    <label for="brand1">2 stars</label>
+                  </div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="ratingfilter">
+                  <div>
+                    <input type="checkbox" id="brand1" />
+                    <label for="brand1">1 star</label>
+                  </div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="productsListsection">
+        <div class="productCards">
+          <div class="productCard">
+            <div class="image">
+              <a href="./productdetailpages/apparels1.html"
+                ><img class="image1" src="./assets/apparels1.jpg" alt=""
+              /></a>
+            </div>
+            <div class="itemname">
+              <div class="itemtitle">
+                <a href="./productdetailpages/apparels1.html"
+                  >Wrangler Rain Jacket</a
+                >
+              </div>
+              <button class="carticon">
+                <a href=""><img src="./assets/cart-plus-icon.svg" alt="" /></a>
+              </button>
+            </div>
+
+            <div class="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="itemprice">Rs. 5000</div>
+          </div>
+          <div class="productCard">
+            <div class="image">
+              <a href="./productdetailpages/apparels2.html"
+                ><img class="image2" src="./assets/apparels2.jpg" alt=""
+              /></a>
+            </div>
+            <div class="itemname">
+              <div class="itemtitle">
+                <a href="./productdetailpages/apparels2.html"
+                  >Kenneth Rain Jacket</a
+                >
+              </div>
+              <button class="carticon">
+                <a href=""><img src="./assets/cart-plus-icon.svg" alt="" /></a>
+              </button>
+            </div>
+
+            <div class="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+            </div>
+
+            <div class="itemprice">Rs. 2000</div>
+          </div>
+          <div class="productCard">
+            <div class="image">
+              <a href="#"
+                ><img class="image3" src="./assets/apparels3.jpg" alt=""
+              /></a>
+            </div>
+            <div class="itemname">
+              <div class="itemtitle"><a href="">Vienna Rain Coat</a></div>
+              <button class="carticon">
+                <a href=""><img src="./assets/cart-plus-icon.svg" alt="" /></a>
+              </button>
+            </div>
+
+            <div class="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="itemprice">Rs. 7000</div>
+          </div>
+          <div class="productCard">
+            <div class="image">
+              <a href="#"
+                ><img class="image3" src="./assets/apparels4.jpg" alt=""
+              /></a>
+            </div>
+            <div class="itemname">
+              <div class="itemtitle"><a href="">SoftSpide Snow Shoes</a></div>
+              <button class="carticon">
+                <a href=""><img src="./assets/cart-plus-icon.svg" alt="" /></a>
+              </button>
+            </div>
+
+            <div class="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="itemprice">Rs. 4000</div>
+          </div>
+          <div class="productCard">
+            <div class="image">
+              <a href="#"
+                ><img class="image5" src="./assets/apparels5.jpg" alt=""
+              /></a>
+            </div>
+            <div class="itemname">
+              <div class="itemtitle"><a href="">Neon Jacket</a></div>
+              <button class="carticon">
+                <a href=""><img src="./assets/cart-plus-icon.svg" alt="" /></a>
+              </button>
+            </div>
+
+            <div class="stars">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="itemprice">Rs. 5000</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copyright">© 2023 TripBird LLC All rights reserved.</div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

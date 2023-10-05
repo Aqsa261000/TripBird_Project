@@ -1,249 +1,253 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  html {
-    font-size: 62.5%; /* 1rem = 10px */
-    overflow-x: hidden;
-  }
-  :root {
-    --color-black: rgb(0, 0, 0);
-    --color-white: rgb(255, 255, 255);
-    --color-primary: rgb(0, 140, 255);
-    --color-primary-dark: rgb(3, 115, 207);
-    --color-red: rgb(255, 0, 0);
-  }
-  .section-title {
-    text-align: center;
-  }
-  nav{
-    grid-area: nav;
-    position: fixed;
-    z-index: 9999;
-    height: 12vh;
-    width: 100vw;
-    padding-right: 4rem;
-    background-color: rgba(0, 0, 0, 0.219);
-  }
-  label.logo{
-    color: var(--color-white);
-    font-size: 3rem;
-    line-height: 8rem;
-    padding: 0 7rem;      /* made changes to height 7rem */
-    font-weight: bold;
-  }
-  label.logo span{
-    color: var(--color-primary);
-    
-  }
-  
-  nav ul{
-    float: right;
-    margin-right: 2rem;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 8rem;
-    margin: 0 0.5rem;    
-  }
-  
-  nav ul li:nth-child(7) a,a.active,a:hover{
-    /* background-color: var(--color-primary); */
-    color: var(--color-white);
-    padding: 1rem 1.2rem;
-    border-radius: 2rem;
-    border: none;
-   
-  }
-  nav ul li:nth-child(8) a,a.active,a:hover{
-    /* background-color: var(--color-primary); */
-    color: var(--color-white);
-    padding: 1rem 1.5rem;
-    border-radius: 2rem;
-    border: none;
-  }
-  nav ul li a{
-    color: var(--color-white);
-    font-size: 1.5rem;
-    padding: 7px 13px;
-    font-weight: 600;
-    
-    text-decoration: none;
-  }
-  nav ul li:last-child a{
-    margin-top: 4rem;
-  }
-  nav ul li:last-child a i{
-    font-size: 2rem;
-  }
-  nav ul li:last-child:hover a i{
-    color: var(--color-primary);
-  }
-  nav ul li:nth-child(7) a i{
-    font-size: 2rem;
-  }
-  nav ul li a.active,a:hover{
-    border-bottom: 0.2rem solid var(--color-primary);
-    color: var(--color-white);
-    background: transparent;
-    border-radius: 0;
-  }
-  .checkbtn{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
+}
+:root {
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-primary: rgb(0, 140, 255);
+  --color-primary-dark: rgb(3, 115, 207);
+  --color-red: rgb(255, 0, 0);
+}
+.section-title {
+  text-align: center;
+}
+nav {
+  grid-area: nav;
+  position: fixed;
+  z-index: 9999;
+  height: 12vh;
+  width: 100vw;
+  padding-right: 4rem;
+  background-color: rgba(0, 0, 0, 0.219);
+}
+label.logo {
+  color: var(--color-white);
+  font-size: 3rem;
+  line-height: 8rem;
+  padding: 0 7rem; /* made changes to height 7rem */
+  font-weight: bold;
+}
+label.logo span {
+  color: var(--color-primary);
+}
+
+nav ul {
+  float: right;
+  margin-right: 2rem;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 8rem;
+  margin: 0 0.5rem;
+}
+nav ul li ul {
+  width: 100%;
+}
+
+nav ul li:nth-child(7) a,
+a.active,
+a:hover {
+  /* background-color: var(--color-primary); */
+  color: var(--color-white);
+  padding: 1rem 1.2rem;
+  border-radius: 2rem;
+  border: none;
+}
+nav ul li:nth-child(8) a,
+a.active,
+a:hover {
+  /* background-color: var(--color-primary); */
+  color: var(--color-white);
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+}
+nav ul li a {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  padding: 7px 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+nav ul li:last-child a {
+  margin-top: 4rem;
+}
+nav ul li:last-child a i {
+  font-size: 2rem;
+}
+nav ul li:last-child:hover a i {
+  color: var(--color-primary);
+}
+nav ul li:nth-child(7) a i {
+  font-size: 2rem;
+}
+nav ul li a:active,
+nav ul li a:hover {
+  border-bottom: 0.2rem solid var(--color-primary);
+  color: var(--color-white);
+  background: transparent;
+  border-radius: 0;
+}
+.checkbtn {
+  font-size: 30px;
+  color: var(--color-black);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+nav ul li:nth-child(7) a:hover {
+  border-bottom: 0.2rem solid var(--color-primary);
+  color: var(--color-white);
+  background: transparent;
+  border-radius: 0;
+}
+
+nav ul li:nth-child(8) a:hover {
+  /* background-color: var(--color-primary-dark);  */
+}
+nav ul li .categories {
+  display: none;
+}
+nav ul li:hover .categories {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.219);
+  color: var(--color-primary);
+  margin-top: -0.4rem;
+  margin-left: -7rem;
+  margin-right: 2rem;
+}
+nav ul li:hover .categories ul li a {
+  color: var(--color-white);
+  background-color: transparent;
+  margin-left: 0.5rem;
+}
+nav ul li:hover .categories ul li a:hover {
+  border-bottom: 0.2rem solid var(--color-primary);
+  border-radius: 0;
+}
+.transport {
+  display: none;
+}
+nav ul li:hover .transport {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.219);
+  position: absolute;
+  margin-top: -0.4rem;
+  padding-left: 0.5rem;
+  padding-right: 5rem;
+}
+nav ul li:hover .transport ul li a {
+  color: var(--color-white);
+}
+.accomodation {
+  display: none;
+}
+nav ul li:hover .accomodation {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.219);
+  position: absolute;
+  margin-top: -0.4rem;
+  padding-left: 2rem;
+  padding-right: 5rem;
+}
+
+nav ul li:hover .accomodation ul li a {
+  color: var(--color-white);
+}
+.profile {
+  display: none;
+}
+nav ul li:hover .profile {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.219);
+  color: var(--color-primary);
+  margin-top: -0.4rem;
+  margin-left: -2rem;
+  width: 15rem;
+}
+nav ul li:hover .profile ul li a {
+  color: var(--color-white);
+  background-color: transparent;
+  margin-left: 0.5rem;
+}
+nav ul li:hover .profile ul li a:hover {
+  border-bottom: 0.2rem solid var(--color-primary);
+  border-radius: 0;
+}
+
+@media only screen and (max-width: 952px) {
+  label.logo {
     font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1218px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    width: 100vw;
+    position: fixed;
+    height: 70vh;
+    background: var(--color-white);
+    color: black;
+    top: 7rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 2;
+    overflow-y: auto;
+    font-size: 1.5rem;
+  }
+  nav ul li {
+    display: block;
+    margin: 2rem 0;
+    line-height: 1.5rem;
+  }
+  nav ul li a {
+    color: black;
+    font-size: 1rem;
+  }
+  nav ul li:nth-child(7) a {
+    color: black;
+    font-size: 1rem;
+  }
+  nav ul li:nth-child(7) a:hover {
+    border-bottom: 0.2rem solid var(--color-primary);
     color: var(--color-black);
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
   }
-  #check{
-    display: none;
-  }
-  nav ul li:nth-child(7) a:hover{
-    border-bottom: 0.2rem solid var(--color-primary);
-    color: var(--color-white);
-    background: transparent;
+  nav ul li:nth-child(8) a {
+    color: black;
+    /* font-size: .3rem; */
     border-radius: 0;
   }
-  
-  nav ul li:nth-child(8) a:hover{
-    /* background-color: var(--color-primary-dark);  */
+  nav ul li:nth-child(8) a i {
+    font-size: 1.5rem;
   }
-  .categories{
-    display: none;
+  nav ul li:nth-child(8) a:hover {
+    /* border-bottom: 0.2rem solid var(--color-primary); */
+    color: var(--color-black);
   }
-  nav ul li:hover .categories{
-    display: block;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.219);
-    color: var(--color-primary);
-    margin-top: -.4rem;
-    margin-left: -.5rem;
-    width: 20rem;
-  }
-  nav ul li:hover .categories ul li a{
-    color: var(--color-white);
-    background-color: transparent;
-    margin-left: .5rem;
-  }
-  nav ul li:hover .categories ul li a:hover{
-    border-bottom: 0.2rem solid var(--color-primary);
-    border-radius: 0;
-    
-  }
-  .transport{
-    display: none;
-  }
-  nav ul li:hover .transport{
-    display: block;
-    background-color: rgba(0, 0, 0, 0.219);
-    position: absolute;
-    margin-top: -.4rem;
-    padding-left: .5rem;
-    padding-right: 5rem;
-    
-  }
-  nav ul li:hover .transport ul li a{
-    color: var(--color-white);
-  }
-  .accomodation{
-    display: none;
-  }
-  nav ul li:hover .accomodation{
-    display: block;
-    background-color: rgba(0, 0, 0, 0.219);
-    position: absolute;
-    margin-top: -.4rem;
-    padding-left: .5rem;
-    padding-right: 5rem; 
-  }
-  .profile{
-    display: none;
-  }
-  nav ul li:hover .profile{
-    display: block;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.219);
-    color: var(--color-primary);
-    margin-top: -.4rem;
-    margin-left: -2rem;
-    width: 15rem;
-  }
-  nav ul li:hover .profile ul li a{
-    color: var(--color-white);
-    background-color: transparent;
-    margin-left: .5rem;
-  }
-  nav ul li:hover .profile ul li a:hover{
-    border-bottom: 0.2rem solid var(--color-primary);
-    border-radius: 0;
-    
-  }
-  
-  
-  @media only screen and (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  
-    @media only screen and (max-width: 1218px){
-    .checkbtn{
-      display: block;
-      color: white;
-    }
-    ul{
-      width: 100vw;
-      position: fixed;
-      height: 50vh;
-      background: var(--color-white);
-      color: black;
-      top: 7rem;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-      z-index: 2;
-      overflow-y: auto;
-      font-size: 1.5rem;
-      
-    }
-    nav ul li{
-      display: block;
-      margin: 2rem 0;
-      line-height: 1.5rem;
-    }
-    nav ul li a{
-      color: black;
-      font-size: 1rem;
-    }
-    nav ul li:nth-child(7) a{
-      color: black;
-      font-size: 1rem;
-    }
-    nav ul li:nth-child(7) a:hover{
-      border-bottom: 0.2rem solid var(--color-primary);
-      color: var(--color-black);
-    }
-    nav ul li:nth-child(8) a{
-      color: black;
-      /* font-size: .3rem; */
-      border-radius: 0;
-    }
-    nav ul li:nth-child(8) a i{
-      font-size: 1.5rem;
-    }
-    nav ul li:nth-child(8) a:hover{
-      /* border-bottom: 0.2rem solid var(--color-primary); */
-      color: var(--color-black);
-    }
-    nav ul li:nth-child(7):hover .categories{
+  nav ul li:nth-child(7):hover .categories {
     display: block;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.219);
@@ -252,24 +256,23 @@
     margin-left: 50rem;
     width: 20rem;
   }
-  nav ul li:hover .categories ul li a{
+  nav ul li:hover .categories ul li a {
     color: var(--color-white);
     background-color: transparent;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
-  nav ul li:hover .categories ul li a:hover{
+  nav ul li:hover .categories ul li a:hover {
     border-bottom: 0.2rem solid var(--color-primary);
     border-radius: 0;
-    
   }
-    a:hover,a.active{
-      border-bottom: 0.2rem solid var(--color-primary);
-      color: var(--color-black);
-    
+  a:hover,
+  a.active {
+    border-bottom: 0.2rem solid var(--color-primary);
+    color: var(--color-black);
+
     border-radius: 0;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
   }
-  
+  #check:checked ~ ul {
+    left: 0;
+  }
+}

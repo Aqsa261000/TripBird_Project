@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  max-width: 100%;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-primary: rgb(0, 140, 255);
+  --color-primary-dark: rgb(3, 115, 207);
+  --color-primary-light: rgb(240, 248, 255);
+  --color-red: rgb(255, 0, 0);
+  --color-dark-red: rgb(243, 26, 26);
+  --color-yellow: rgb(246, 238, 0);
+  --color-orange: rgb(255, 153, 0);
+  --color-darkblue: rgb(0, 51, 102);
+  --color-pink: rgb(255, 51, 153);
+  --color-lightgreen: rgb(0, 255, 0);
+  --color-purple: rgb(204, 51, 255);
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Signika Negative', sans-serif;
+}
+
+.fullcontainer {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, minmax(10rem, 1fr)) 1fr;
+  grid-template-rows: 9rem min-content repeat(3, min-content);
+  grid-template-areas:
+    'nav nav nav nav nav nav'
+    'categories categories categories categories categories categories'
+    '. subcategories subcategories subcategories subcategories .'
+    'filter list list list list list'
+    'footer footer footer footer footer footer';
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+nav {
+  grid-area: nav;
+  position: fixed;
+
+  background-color: var(--color-white);
+}
+
+nav ul li a,
+nav ul li a:hover {
+  color: var(--color-black);
+}
+
+nav ul li a i {
+  color: var(--color-black);
+}
+
+nav ul li:hover {
+  color: var(--color-black);
+}
+
+label.logo {
+  color: var(--color-black);
+}
+/*
+label.logo span{
+  color: var(--color-primary);
+  
+}
+
+nav ul{
+  float: right;
+  margin-right: 2rem;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 8rem;
+  margin: 0 0.5rem;
+  
+}
+
+nav ul li:nth-child(8) a,a.active,a:hover{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 1rem;
+  border: none;
+}
+nav ul li:nth-child(9) a,a.active,a:hover{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 1rem;
+  border: none;
+}
+
+nav ul li:nth-child(8) a:hover{
+  background-color: var(--color-primary-dark);
+  
+  
+}
+
+
+nav ul li:nth-child(9) a:hover{
+  background-color: var(--color-primary-dark);
+  
+  
+}
+nav ul li a{
+  color: var(--color-black);
+  font-size: 1.5rem;
+  padding: 7px 13px;
+  font-weight: 600;
+  
+  text-decoration: none;
+}
+nav a.active, nav a:hover{
+  border-bottom: 0.2rem solid var(--color-primary);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-radius: 0;
+} */
+.checkbtn {
+  font-size: 30px;
+  color: var(--color-black);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+@media only screen and (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1332px) {
+  .checkbtn {
+    display: block;
+  }
+  /* nav ul {
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    background: var(--color-black);
+    top: 7rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 2;
+    overflow-y: auto;
+    font-size: 1.5rem;
+  } */
+  nav ul li {
+    display: block;
+    margin: 3.5rem 0;
+    line-height: 1.5rem;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    border-bottom: 0.2rem solid var(--color-primary);
+    color: var(--color-black);
+
+    border-radius: 0;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+.categories {
+  grid-area: categories;
+
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.categories .mainheading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.subcategories a {
+  text-decoration: none;
+  color: var(--color-black);
+  border-bottom: 0.2 solid var(--color-primary);
+}
+.subcategories a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.subcategories {
+  grid-area: subcategories;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.subcategories .subsubcategories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  align-content: center;
+
+  width: 100%;
+  padding: 4rem 0;
+}
+.ssc1 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  opacity: 0.3;
+}
+
+.ssc2 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.ssc3 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  opacity: 0.3;
+}
+.subcategories .subsubcategories img {
+  width: 12rem;
+  height: 11rem;
+
+  border-radius: 100%;
+}
+
+.subsubcategories h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  width: 20rem;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+.subcategories a {
+  text-decoration: none;
+}
+.subcategories a:hover {
+  text-decoration: underline;
+}
+
+.filtersection {
+  grid-area: filter;
+  display: grid;
+  justify-items: center;
+  margin: 2rem 0 0 0;
+}
+.filtersection .accordion-item {
+  border: none;
+  border-bottom: 0.1rem solid var(--color-black);
+  width: 22rem;
+}
+.filtersection .accordion-button {
+  height: 7rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--font-primary);
+
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-black);
+  box-shadow: none;
+  outline: none;
+}
+.filtersection .accordion-body {
+  display: grid;
+  align-items: center;
+  row-gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.filtersection .accordion-body div {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 1rem;
+}
+.filtersection .accordion-body label {
+  font-size: 1.2rem;
+}
+.filtersection .accordion-body .form-label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+.filtersection .colors {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  grid-template-rows: repeat(2, min-content);
+  column-gap: 2.5rem;
+  row-gap: 1.5rem;
+  justify-content: center;
+}
+.filtersection .accordion-body .color {
+  border-radius: 10rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.filtersection .accordion-body .ratingfilter {
+  display: grid;
+  grid-template-columns: repeat(2, 5.5rem);
+  height: 2rem;
+  align-content: center;
+
+  margin: 1rem 0;
+}
+.filtersection .accordion-body .ratingfilter .stars {
+  display: grid;
+  grid-template-columns: repeat(5, 1.5rem);
+  margin-left: 1rem;
+}
+.filtersection .colors .color:first-child {
+  background-color: var(--color-red);
+}
+.filtersection .colors .color:nth-child(2) {
+  background-color: var(--color-yellow);
+}
+.filtersection .colors .color:nth-child(3) {
+  background-color: var(--color-orange);
+}
+.filtersection .colors .color:nth-child(4) {
+  background-color: var(--color-black);
+}
+.filtersection .colors .color:nth-child(5) {
+  background-color: var(--color-lightgreen);
+}
+.filtersection .colors .color:nth-child(6) {
+  background-color: var(--color-pink);
+}
+.filtersection .colors .color:nth-child(7) {
+  background-color: var(--color-darkblue);
+}
+.filtersection .colors .color:nth-child(8) {
+  background-color: var(--color-purple);
+}
+.productsListsection {
+  grid-area: list;
+  background-color: beige;
+}
+.productCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-content: center;
+  justify-items: center;
+  row-gap: 1rem;
+  margin: 2rem 0 5rem 0;
+}
+.productCards .productCard {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: repeat(4, min-content);
+  width: 25rem;
+  border: none;
+  margin-top: 2rem;
+  position: relative;
+}
+.productCards .productCard .itemname {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-content: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+.productCards .productCard .itemname .carticon img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.productCards .productCard .itemname .carticon {
+  background-color: transparent;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  border: none;
+}
+.productCards .productCard .itemname .carticon a {
+  background-color: transparent;
+}
+.productCards .productCard .itemname .itemtitle a {
+  background-color: transparent;
+  color: var(--color-black);
+}
+.productCards .productCard .itemname .itemtitle a:hover {
+  text-decoration: underline;
+}
+.productCards .productCard .itemprice {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.productsListsection .productCard .image {
+  max-width: 100%;
+
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-white);
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+}
+
+.productsListsection .productCard .image img {
+  width: 100%;
+  height: 30rem;
+  transition: opacity 0.3s;
+  object-fit: contain;
+}
+
+.productsListsection .productCard .stars {
+  display: grid;
+  grid-template-columns: repeat(5, 2.5rem);
+}
+.stars i {
+  color: #d6d5d5;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.stars i.active {
+  color: var(--color-yellow);
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 30rem;
+  background-color: var(--color-black);
+  align-content: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.footer .copyright {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-weight: 300;
+  font-family: var(--font-primary);
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .fullcontainer {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(10rem, 1fr)) 1fr;
+    grid-template-rows: 9rem min-content repeat(4, min-content);
+    grid-template-areas:
+      'nav nav nav nav nav nav'
+      'categories categories categories categories categories categories'
+      'subcategories subcategories subcategories subcategories subcategories subcategories'
+      'filter filter filter filter filter filter'
+      'list list list list list list'
+      'footer footer footer footer footer footer';
+  }
+
+  .filtersection {
+    grid-area: filter;
+    display: grid;
+    justify-items: normal;
+    align-content: center;
+    margin: 2rem 0 0 0;
+  }
+  .filtersection .accordion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+  .filtersection .accordion-item {
+    border: none;
+    border-bottom: 0.1rem solid var(--color-black);
+
+    width: 100%;
+  }
+  .filtersection .accordion-item .accordion-body {
+    border: 0.1px solid #d6d5d5;
+  }
+  .filtersection .accordion-item:nth-child(3) {
+    border-bottom: none;
+  }
+  .filtersection .accordion-item:last-child {
+    border-bottom: none;
+  }
+}
