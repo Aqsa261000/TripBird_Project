@@ -1,0 +1,20 @@
+{
+  "name": "tripbird_project",
+  "version": "1.0.0",
+  "description": "A Full Stack Ecommerce Travelling App using HTML, CSS, JAVASCRIPT and Firebase",
+  "main": "script.js",
+  "scripts": {
+    "dev": "webpack --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.5.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::root {
+  --var-black: black;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+}
+li {
+  margin-top: 1.5rem;
+  transition: 0.2s all ease-in;
+}
+a {
+  text-decoration: none;
+  color: var(--var-black);
+  font-weight: 500;
+}
+nav a:hover {
+  border-bottom: 0.2rem solid black;
+}
+
+form {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form label {
+  border: 1px solid black;
+
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: black;
+  font-weight: 600;
+  border: none;
+  color: white;
+}
+form input {
+  border: 1px solid black;
+
+  margin: 1rem;
+  padding: 1rem 2rem;
+
+  font-weight: 600;
+}
+form button {
+  padding: 1rem 4rem;
+  border: none;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+
+form button:hover {
+  background-color: rgb(9, 88, 9);
+}
+form h1 {
+  padding: 1rem 2rem;
+  font-weight: 700;
+}
+
+form p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.image {
+  background: url(/dist/assets/login.avif) no-repeat center center/cover;
+  width: 40rem;
+  height: 40rem;
+}
+
+form .hh {
+  display: grid;
+  grid-template-columns: 20rem 40rem;
+}
